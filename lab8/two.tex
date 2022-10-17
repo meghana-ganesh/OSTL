@@ -1,0 +1,40 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\begin{document}
+	\section{Introduction}
+	this is a section referncing table and figure
+	\ref{table}
+	\ref{av}
+	here is some text
+	\newpage
+	\subsection{Table}
+	\label{table}
+	\begin{tabular}{r|cl}
+		1st Column & 2nd Column & 3rd Column\\
+		\hline
+		a & b & c\\
+		\cline{2-3}
+		d & e & f\\
+	\end{tabular}
+	\newpage
+	\subsection{Levels of AV}
+	\label{av}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.1]{/home/meghana/Pictures/Screenshot from 2022-08-24 19-25-33.png}
+	\end{figure}
+	\begin{itemize}
+		\item Level 0 (L0): No automation
+		\item Level 1 (L1): Advanced Driver Assistance Systems (ADAS) 
+		\item Level 2 (L2): Now both steering and acceleration are simultaneously handled by the autonomous system. 
+		\item Level 3 (L3): Conditional automation 
+		\item Level 4 (L4): These systems have high automation and can fully drive themselves under certain conditions. The vehicle won’t drive if not all conditions are met.  
+		\item Level 5 (L5): Full automation
+	\end{itemize}
+\begin{enumerate}
+	\item SLAM
+	\item Path planning and controls
+	\item Perception 
+\end{enumerate}
+	
+\end{document}
